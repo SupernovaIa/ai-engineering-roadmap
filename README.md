@@ -223,6 +223,7 @@ graph TD
 | `python-fundamentals` | 🟡 In progress |
 | `poo-python` | 🟢 Complete |
 | `fastapi-fundamentals` | 🟢 Complete |
+| `devops-fundamentals` | 🟢 Complete |
 | `hexagonal-architecture` | 🟢 Complete |
 | All others | ⚪ Planned |
 
