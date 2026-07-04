@@ -44,7 +44,9 @@ graph TD
     %% Layer 0
     vscode[vscode-fundamentals]
     git[git-fundamentals]
+    bash[bash-fundamentals]
     python[python-fundamentals]
+    poo[poo-python]
     ai_fund[ai-fundamentals]
 
     %% Layer 1
@@ -90,8 +92,12 @@ graph TD
     python --> data
     python --> llm
     python --> devops
+    bash --> devops
     ai_fund --> llm
     ai_fund --> prompt
+
+    %% Intra-layer 0
+    python --> poo
 
     %% Edges L1 -> L2
     llm --> embed
@@ -146,7 +152,9 @@ graph TD
 |---|---|---|---|
 | `vscode-fundamentals` | VSCode, extensions, shortcuts, configuration | — | all Layer 1 |
 | `git-fundamentals` | Git, GitHub, workflow, PRs | — | all Layer 1 |
-| `python-fundamentals` | Python, types, functions, OOP, best practices | — | `math-for-ml`, `data-fundamentals`, `llm-fundamentals`, `devops-fundamentals` |
+| `bash-fundamentals` | Shell, terminal workflows, scripting and automation | — | `devops-fundamentals` |
+| `python-fundamentals` | Python, types, functions, best practices | — | `math-for-ml`, `data-fundamentals`, `llm-fundamentals`, `devops-fundamentals`, `poo-python` |
+| `poo-python` | OOP and design patterns in Python (deep-dive) | `python-fundamentals` | — (reinforcement, doesn't gate anything) |
 | `ai-fundamentals` | What is AI, model types, key concepts | — | `llm-fundamentals`, `prompt-engineering` |
 
 ### Layer 1 — Foundations
@@ -210,6 +218,12 @@ graph TD
 |---|---|
 | `ai-engineering-roadmap` | 🟡 In progress |
 | `ai-engineering-agents` | 🟡 In progress |
+| `git-fundamentals` | 🟢 Complete |
+| `bash-fundamentals` | 🟢 Complete |
+| `python-fundamentals` | 🟡 In progress |
+| `poo-python` | 🟢 Complete |
+| `fastapi-fundamentals` | 🟢 Complete |
+| `hexagonal-architecture` | 🟢 Complete |
 | All others | ⚪ Planned |
 
 ---

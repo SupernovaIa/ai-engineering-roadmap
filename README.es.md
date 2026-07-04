@@ -44,7 +44,9 @@ graph TD
     %% Layer 0
     vscode[vscode-fundamentals]
     git[git-fundamentals]
+    bash[bash-fundamentals]
     python[python-fundamentals]
+    poo[poo-python]
     ai_fund[ai-fundamentals]
 
     %% Layer 1
@@ -90,8 +92,12 @@ graph TD
     python --> data
     python --> llm
     python --> devops
+    bash --> devops
     ai_fund --> llm
     ai_fund --> prompt
+
+    %% Intra-layer 0
+    python --> poo
 
     %% Edges L1 -> L2
     llm --> embed
@@ -146,7 +152,9 @@ graph TD
 |---|---|---|---|
 | `vscode-fundamentals` | VSCode, extensiones, atajos, configuración | — | toda la Capa 1 |
 | `git-fundamentals` | Git, GitHub, flujo de trabajo, PRs | — | toda la Capa 1 |
-| `python-fundamentals` | Python, tipos, funciones, POO, buenas prácticas | — | `math-for-ml`, `data-fundamentals`, `llm-fundamentals`, `devops-fundamentals` |
+| `bash-fundamentals` | Shell, flujos de terminal, scripting y automatización | — | `devops-fundamentals` |
+| `python-fundamentals` | Python, tipos, funciones, buenas prácticas | — | `math-for-ml`, `data-fundamentals`, `llm-fundamentals`, `devops-fundamentals`, `poo-python` |
+| `poo-python` | POO y patrones de diseño en Python (profundización) | `python-fundamentals` | — (refuerzo, no bloquea nada) |
 | `ai-fundamentals` | Qué es la IA, tipos de modelos, conceptos clave | — | `llm-fundamentals`, `prompt-engineering` |
 
 ### Capa 1 — Fundamentos
@@ -210,6 +218,12 @@ graph TD
 |---|---|
 | `ai-engineering-roadmap` | 🟡 En progreso |
 | `ai-engineering-agents` | 🟡 En progreso |
+| `git-fundamentals` | 🟢 Completo |
+| `bash-fundamentals` | 🟢 Completo |
+| `python-fundamentals` | 🟡 En progreso |
+| `poo-python` | 🟢 Completo |
+| `fastapi-fundamentals` | 🟢 Completo |
+| `hexagonal-architecture` | 🟢 Completo |
 | Todos los demás | ⚪ Planificado |
 
 ---
